@@ -91,7 +91,8 @@ def to_coco(args, label_files, train):
             dict(
                 license=0,
                 url=None,
-                file_name=osp.relpath(out_img_file, osp.dirname(out_ann_file)),
+                # file_name=osp.relpath(out_img_file, osp.dirname(out_ann_file)),
+                file_name=base + ".jpg",
                 #   out_img_file = "/coco/train2017/1.jpg"
                 #   out_ann_file = "/coco/annotations/annotations_train2017.json"
                 #   osp.dirname(out_ann_file) = "/coco/annotations"
