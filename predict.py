@@ -29,11 +29,11 @@ def time_synchronized():
 
 
 def main():
-    num_classes = 90  # 不包含背景
+    num_classes = 1  # 不包含背景
     box_thresh = 0.5
-    weights_path = "./save_weights/model_25.pth"
-    img_path = "./test.jpg"
-    label_json_path = './coco91_indices.json'
+    weights_path = "./save_weights/model_3.pth"
+    img_path = "./predict_img/img/002.jpg"
+    label_json_path = './coco1_insulator.json'
 
     # get devices
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -98,7 +98,7 @@ def main():
         plt.imshow(plot_img)
         plt.show()
         # 保存预测的图片结果
-        plot_img.save("test_result.jpg")
+        plot_img.save("./predict_img/res/test_result.jpg")
 
 
 if __name__ == '__main__':
