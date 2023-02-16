@@ -1,4 +1,5 @@
 data
 test
 save_weights
-predict_img
+infer
+*.pth

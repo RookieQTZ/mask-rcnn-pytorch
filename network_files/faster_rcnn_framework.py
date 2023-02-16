@@ -77,7 +77,7 @@ class FasterRCNNBase(nn.Module):
             val = img.shape[-2:]
             assert len(val) == 2  # 防止输入的是个一维向量
             original_image_sizes.append((val[0], val[1]))
-        # original_image_sizes = [img.shape[-2:] for img in images]
+        # original_image_sizes = [infer_data.shape[-2:] for infer_data in images]
 
         images, targets = self.transform(images, targets)  # 对图像进行预处理
         # print(images.tensors.shape)

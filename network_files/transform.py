@@ -325,7 +325,7 @@ class GeneralizedRCNNTransform(nn.Module):
         max_size = tuple(max_size)
 
         # work around for
-        # pad_img[: img.shape[0], : img.shape[1], : img.shape[2]].copy_(img)
+        # pad_img[: infer_data.shape[0], : infer_data.shape[1], : infer_data.shape[2]].copy_(infer_data)
         # which is not yet supported in onnx
         padded_imgs = []
         for img in images:

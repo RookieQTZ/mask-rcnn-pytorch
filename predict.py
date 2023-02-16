@@ -31,8 +31,8 @@ def time_synchronized():
 def main():
     num_classes = 1  # 不包含背景
     box_thresh = 0.5
-    weights_path = "./save_weights/model_3.pth"
-    img_path = "./predict_img/img/002.jpg"
+    weights_path = "./save_weights/model_19.pth"
+    img_path = "./infer/infer_data/1434.jpg"
     label_json_path = './coco1_insulator.json'
 
     # get devices
@@ -98,7 +98,7 @@ def main():
         plt.imshow(plot_img)
         plt.show()
         # 保存预测的图片结果
-        plot_img.save("./predict_img/res/test_result.jpg")
+        plot_img.save("./infer/infer_res/test_result.jpg")
 
 
 if __name__ == '__main__':

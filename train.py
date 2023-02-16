@@ -207,7 +207,7 @@ if __name__ == "__main__":
     parser.add_argument('--epochs', default=20, type=int, metavar='N',
                         help='number of total epochs to run')
     # 学习率
-    parser.add_argument('--lr', default=0.008, type=float,
+    parser.add_argument('--lr', default=0.002, type=float,
                         help='initial learning rate, 0.02 is the default value for training '
                              'on 8 gpus and 2 images_per_gpu')
     # SGD的momentum参数
