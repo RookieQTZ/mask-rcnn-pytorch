@@ -33,7 +33,8 @@ def main():
     num_classes = 1  # 不包含背景
     box_thresh = 0.5
     weights_path = "./save_weights/model_19.pth"
-    img_path = "./infer/infer_data"
+    # img_path = "./infer/infer_data"
+    img_path = "./img"
     label_json_path = './coco1_insulator.json'
     kou_out_path = "./infer/infer_res/kou"
     infer_out_path = "./infer/infer_res/res"
