@@ -91,7 +91,7 @@ def main():
 
             if len(predict_boxes) == 0:
                 print("没有检测到任何目标!")
-                return
+                continue
 
             # 抠取预测结果
             # filename = img_path.split("/")[-1]
